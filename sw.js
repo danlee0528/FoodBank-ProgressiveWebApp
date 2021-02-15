@@ -1,7 +1,8 @@
 const staticCacheName = 'site-static-v1';
 const dynamicCacheName = 'site-dynamic-v1'
+const NUM_CACHES_TO_KEEP = 15;
 const assets = [
-    '/',
+    '/pages/',
     '/pages/index.html',
     '/js/app.js',
     '/js/ui.js',
@@ -12,6 +13,18 @@ const assets = [
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     '/pages/fallback.html'
 ];
+
+// cahce size limit function
+const limitCacheSize = (name, size) => {
+    caches.open(name).then(cache => {
+        cache.keys().then(keys => {
+            if(keys.length > size){
+                cache.delete(keys[0]).then(limitCacheSize(name,size));
+            }
+        });
+    });
+};
+
 
 // install service worker
 self.addEventListener('install', evt =>{
@@ -43,6 +56,8 @@ self.addEventListener('fetch', evt => {
             return cacheRes || fetch(evt.request).then(fetchRes => {
                 return caches.open(dynamicCacheName).then(cache => {
                     cache.put(evt.request.url, fetchRes.clone());
+                    limitCacheSize(dynamicCacheName, NUM_CACHES_TO_KEEP);
+
                     return fetchRes;
                 })
             });
