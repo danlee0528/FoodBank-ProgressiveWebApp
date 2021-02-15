@@ -1,6 +1,6 @@
 {
     "name": "Food Bank",
-    "short_name": "FoodBook",
+    "short_name": "FoodBank",
     "start_url": "/pages/index.html", 
     "display": "standalone",
     "background-color": "#FFE902",
