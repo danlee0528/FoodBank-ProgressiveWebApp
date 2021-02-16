@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v4';
-const dynamicCacheName = 'site-dynamic-v3'
+const staticCacheName = 'site-static-v2';
+const dynamicCacheName = 'site-dynamic-v4'
 const NUM_CACHES_TO_KEEP = 15;
 const assets = [
     '/pages/',
@@ -14,7 +14,7 @@ const assets = [
     '/pages/fallback.html'
 ];
 
-// cahce size limit function
+// cahce size limit function 
 const limitCacheSize = (name, size) => {
     caches.open(name).then(cache => {
         cache.keys().then(keys => {
