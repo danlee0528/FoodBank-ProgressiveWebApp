@@ -1,5 +1,6 @@
 # Demo
 - https://foodbank-pwa.firebaseapp.com/
+<img src="https://github.com/danlee0528/FoodBank-ProgressiveWebApp/blob/main/Screen%20Shot%202021-02-15%20at%2010.54.49%20PM.png" width="40%"/>
 
 # How to Run? 
 - Visit the above link on your mobile device
@@ -30,3 +31,4 @@
 2. The brower installs event (cahcing, other tasks)
 3. Service worker becomes active
 4. Service worker "listens" for events
+a
