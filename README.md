@@ -1,4 +1,11 @@
-# 1. Understanding Progressive Web Apps
+# Demo
+- https://foodbank-pwa.firebaseapp.com/
+
+# Technologies
+- Firebase
+- JavaScript, HTML, CSS
+
+# Understanding Progressive Web Apps
 ## Progressive Web Apps
 - Use web technologies such as Vanilla JS, CSS, HTML
     - Install on a mobile home screen
@@ -17,7 +24,3 @@
 2. The brower installs event (cahcing, other tasks)
 3. Service worker becomes active
 4. Service worker "listens" for events
-
-# 2. Technologies
-- Firebase
-- JavaScript, HTML, CSS
