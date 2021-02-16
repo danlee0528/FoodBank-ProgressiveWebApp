@@ -1,7 +1,7 @@
 {
     "name": "Food Bank",
     "short_name": "FoodBank",
-    "start_url": "/", 
+    "start_url": "/index.html", 
     "display": "standalone",
     "background_color": "#FFE902",
     "theme_color": "#FEE1C4",
