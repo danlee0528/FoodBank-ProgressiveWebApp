@@ -1,6 +1,12 @@
 # Demo
 - https://foodbank-pwa.firebaseapp.com/
 
+# How to Run? 
+- Visit the above link on your mobile device
+- Save the page to home screen from the option menu
+- Go offline and start adding/removing items
+
+
 # Technologies
 - Firebase
 - JavaScript, HTML, CSS
